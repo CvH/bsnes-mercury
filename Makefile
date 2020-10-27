@@ -459,7 +459,7 @@ OBJECTS := $(SOURCES_CXX:.cpp=.o) $(SOURCES_C:.c=.o)
 all: $(TARGET)
 
 ifeq ($(DEBUG),0)
-   FLAGS += -O3 $(EXTRA_GCC_FLAGS)
+   FLAGS += $(EXTRA_GCC_FLAGS)
 else
    FLAGS += -O0 -g
 endif
